@@ -1,0 +1,24 @@
+name:                just
+version:             1.0.0
+synopsis:            paragraph reformatter
+license:             PublicDomain
+license-file:        LICENSE.md
+author:              Anthony Yakovlenko
+maintainer:          tony.yakovlenko@gmail.com
+category:            Text
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable just
+  main-is:             Main.hs
+  build-depends:       base, split, hspec
+  hs-source-dirs:      src/main
+  default-language:    Haskell2010
+  ghc-options:         -Wall -O2
+
+test-suite test
+  type:                exitcode-stdio-1.0
+  main-is:             Spec.hs
+  hs-source-dirs:      src/main, src/test
+  build-depends:       base, split, hspec
+  default-language:    Haskell2010
