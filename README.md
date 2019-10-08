@@ -1,1 +1,1 @@
-Paragraph reformatter written in Haskell.
+Paragraph justificator written in Haskell.
